@@ -1,13 +1,14 @@
-const showAnswer = document.querySelectorAll(".answer-container");
-const arrow = document.querySelectorAll(".question-container");
+const changeState = document.querySelectorAll(".faq-container");
 
-arrow.forEach((questionContainer) => {
-  questionContainer.addEventListener("click", () => {
-    questionContainer.classList.toggle("turn-arrow");
-    if (questionContainer.classList.contains("turn-arrow")) {
-      showAnswer.forEach((answer) => {
-        answer.classList.remove("hidden");
+changeState.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (item.classList.contains("active-state")) {
+      item.classList.remove("active-state");
+    } else {
+      changeState.forEach((item) => {
+        item.classList.remove("active-state");
       });
+      item.classList.add("active-state");
     }
   });
 });

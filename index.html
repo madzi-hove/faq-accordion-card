@@ -11,28 +11,87 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="css/reset/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Frontend Mentor | FAQ Accordion Card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body class="background">
-    How many team members can I invite? You can invite up to 2 additional users
-    on the Free plan. There is no limit on team members for the Premium plan.
-    What is the maximum file upload size? No more than 2GB. All files in your
-    account must fit your allotted storage space. How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your
-    profile page. A reset link will be emailed to you. Can I cancel my
-    subscription? Yes! Send us a message and we’ll process your request no
-    questions asked. Do you provide additional support? Chat and email support
-    is available 24/7. Phone lines are open during normal business hours.
+    <main class="container">
+      <div class="container__item image-container"></div>
+      <div class="container__item accordion-container">
+        <header><h1 class="main-heading">FAQ</h1></header>
+
+        <ul>
+          <li class="accordion-container__item">
+            <div class="faq-container">
+              <p class="faq">How many team members can I invite?</p>
+              <span class="arrow"></span>
+            </div>
+            <div class="answer-container">
+              <p class="answer">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+          </li>
+          <li class="accordion-container__item">
+            <div class="faq-container">
+              <p class="faq">What is the maximum file upload size?</p>
+              <span class="arrow"></span>
+            </div>
+            <div class="answer-container">
+              <p class="answer">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+          </li>
+          <li class="accordion-container__item">
+            <div class="faq-container">
+              <p class="faq">How do I reset my password?</p>
+              <span class="arrow"></span>
+            </div>
+            <div class="answer-container">
+              <p class="answer">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+          </li>
+          <li class="accordion-container__item">
+            <div class="faq-container">
+              <p class="faq">Can I cancel my subscription?</p>
+              <span class="arrow"></span>
+            </div>
+            <div class="answer-container">
+              <p class="answer">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+          </li>
+          <li class="accordion-container__item">
+            <div class="faq-container">
+              <p class="faq">Do you provide additional support?</p>
+              <span class="arrow"></span>
+            </div>
+            <div class="answer-container">
+              <p class="answer">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/madzi-hove">Madziviridze Hove</a>.
     </div>
     <script src="script.js"></script>
   </body>
