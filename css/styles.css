@@ -15,7 +15,7 @@
   --light-grayish-blue: hsl(240, 5%, 91%);
 
   /* transition duration */
-  --transition-time: 0.5s;
+  --transitin-time: 0.5s;
 }
 
 .background {
